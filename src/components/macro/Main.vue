@@ -1,15 +1,18 @@
 <template>
   <main>
     <FeaturedProducts :feat="featuredArray"/>
+    <Collections/>
   </main>
 </template>
 
 <script>
-import FeaturedProducts from '../elements/FeaturedProducts.vue'
+import FeaturedProducts from '../elements/FeaturedProducts.vue';
+import Collections from '../elements/Collections.vue'
 export default {
     name: 'Main',
     components: {
       FeaturedProducts,
+      Collections
     },
     data() {
       return {

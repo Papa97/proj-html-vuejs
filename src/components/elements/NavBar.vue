@@ -1,10 +1,10 @@
 <template>
     <div class="container">
-        <div class="d-flex justify-content-between">
+        <div class="d-flex justify-content-between w-100 h-100 align-items-center">
             <div><img src="../../assets/images/classic_shop_logo2x.png" alt=""></div>
-            <div class="nav-bar-head">
-                <ul class="d-flex">
-                    <li class="general-link" v-for="(link ,index) in links" :key='index'>
+            <div class="nav-bar-head h-100">
+                <ul class="h-100 d-flex">
+                    <li class="general-link h-100" v-for="(link ,index) in links" :key='index'>
                         <a href="#">{{link.testo}}
                         <span v-if="link.chevron == true"><i class="fas fa-chevron-down piccolo"></i></span>
                         </a>
@@ -28,11 +28,17 @@ export default {
 
 <style lang="scss" scoped>
 .container{
-    margin-bottom: 40px;
+    position: relative;
+    box-sizing: border-box;
+    // margin-bottom: 40px;
+    height: 152px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 img {
     width: 200px;
-    margin-top: 30px;
 }
 .rounded-pill {
     background-color: #427ed5;
@@ -40,7 +46,6 @@ img {
     color: #fff;
     font-weight: 700;
     padding: 10px 20px;
-    margin-top: 30px;
 }
 .nav-bar-head{
     ul {
@@ -51,20 +56,18 @@ img {
 }
 
 .general-link{
-    padding: 40px 20px 0;
     box-sizing: border-box;
+    align-self: center;
+    display: flex;
+    padding: 0 15px;
+    border-top:2px solid transparent ;
 }
-
-// .general-link,
-// li:last-of-type{
-//     padding: 10px 15px
-// }
-
 
 .general-link,
 a{
     color: #6b6a6b;
     text-decoration: none;
+
 }
 
 
@@ -72,6 +75,7 @@ a{
 .general-link:hover{
     border-top: 2px solid #427ed5;
     color:#427ed5
+
 }
 
 .piccolo{
@@ -80,11 +84,15 @@ a{
 
 .dark {
     color:#2a2f33 ;
-    margin-top: 40px;
     margin-left: 10px;
     &:hover{
         color: #427ed5;
     }
 }
 
+ul {
+    a {
+        align-self: center;
+    }
+}
 </style>   
