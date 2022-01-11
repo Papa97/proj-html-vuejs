@@ -69,7 +69,6 @@ export default {
 <style lang="scss" scoped>
 
 hr{
-  width: 100vw;
   color: black;
   margin: 0;
 }
