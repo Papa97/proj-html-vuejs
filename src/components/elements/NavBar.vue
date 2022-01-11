@@ -27,7 +27,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.container{
+    margin-bottom: 40px;
+}
 img {
     width: 200px;
     margin-top: 30px;

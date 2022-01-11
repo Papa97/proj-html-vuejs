@@ -52,6 +52,11 @@ a{
         font-size:20px;
         text-transform: uppercase;
         color: white;
+        font-weight: 600;
+    }
+    div:hover{
+        background-color: rgba(255,255,255,0.6);
+        
     }
 }
 </style>
