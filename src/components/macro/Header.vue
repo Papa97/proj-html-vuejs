@@ -2,7 +2,7 @@
   <header>
     <HeaderTop/>
     <hr>
-    <NavBar/>
+    <NavBar :links="links"/>
     <JumboHead/>
   </header>
 </template>
@@ -24,27 +24,39 @@ export default {
         links: [
           {
             testo: "Home",
-            currnet: "false",
+            current: false,
+            chevron: true
+
           },
           {
             testo: "Shop",
-            currnet: "false",
+            current: false,
+            chevron: true
+
           },
           {
             testo: "Products",
-            currnet: "false",
+            current: false,
+            chevron: true
+
           },
           {
             testo: "Categories",
-            currnet: "false",
+            current: false,
+            chevron: true
+
           },
           {
             testo: "News",
-            currnet: "false",
+            current: false,
+            chevron: false
+
           },
           {
             testo: "Elements",
-            currnet: "false",
+            current: false,
+            chevron: true
+
           }
         ]
       }
@@ -57,8 +69,8 @@ export default {
 <style lang="scss" scoped>
 
 hr{
-  margin: 0;
   width: 100vw;
-  color: #ababab;
+  color: black;
+  margin: 0;
 }
 </style>
