@@ -32,15 +32,20 @@ name:'Collections'
 
 <style lang="scss" scoped>
 .container-fluid{
+    margin: 70px 0 ;
     padding: 0;
 }
 
 a{
     color: inherit;
 }
+
+a:hover {
+    color: inherit;
+}
 .col-4{
     background-size: cover;
-    height: 650px;
+    height: 610px;
     position: relative;
     text-align: center;
 }

@@ -1,9 +1,9 @@
 <template>
     <div class="container">
       <div class="text-center">
-        <div class="prova" > 
+        <div class="featured-products" > 
             <h2>Featured Products</h2> 
-            </div>
+        </div>
         <hr class="hr-1">
         <hr class="hr-2">
         <div class="light">Must have products from our top sellers</div>
@@ -58,7 +58,7 @@ export default {
     right: 20px;
 }
 
-.prova{
+.featured-products{
     background-color: #fff;
     display: inline-block;
     h2{

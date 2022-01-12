@@ -2,18 +2,24 @@
   <main>
     <FeaturedProducts :feat="featuredArray"/>
     <Collections/>
+    <BestSeller :prods="bestSellerArray"/>
+    <AdProd/>
   </main>
 </template>
 
 <script>
 import FeaturedProducts from '../elements/FeaturedProducts.vue';
-import Collections from '../elements/Collections.vue'
+import Collections from '../elements/Collections.vue';
+import BestSeller from '../elements/BestSeller.vue';
+import AdProd from '../elements/AdProd.vue'
 export default {
     name: 'Main',
     components: {
       FeaturedProducts,
-      Collections
-    },
+      Collections,
+      BestSeller,
+      AdProd
+       },
     data() {
       return {
         featuredArray: [
@@ -45,6 +51,19 @@ export default {
             'prezzoSconto' : '96'
 
           }
+        ],
+        dividerArray : [
+          'Featured Products',
+          'Best Seller',
+          'New Arrivals',
+        ],
+
+        bestSellerArray : [
+          'spring_printed_dress-231x300.jpg',
+          'modern_love_tee-200x260.jpg',
+          'black_leather_jacket-231x300.jpg',
+          'black_elegant_leather_jacket-231x300.jpg',
+          'hipster_black_top-231x300.jpg'
         ]
       }
     }    
