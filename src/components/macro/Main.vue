@@ -6,6 +6,7 @@
     <AdProd/>
     <NewArrivals :arrivals="newArrivalsArray"/>
     <Quote/>
+    <OurBlog :posts="ourBlogArray"/>
   </main>
 </template>
 
@@ -15,7 +16,8 @@ import Collections from '../elements/Collections.vue';
 import BestSeller from '../elements/BestSeller.vue';
 import AdProd from '../elements/AdProd.vue';
 import NewArrivals from '../elements/NewArrivals.vue';
-import Quote from '../elements/Quote.vue'
+import Quote from '../elements/Quote.vue';
+import OurBlog from '../elements/OurBlog.vue';
 
 export default {
     name: 'Main',
@@ -25,7 +27,8 @@ export default {
       BestSeller,
       AdProd,
       NewArrivals,
-      Quote
+      Quote,
+      OurBlog
        },
     data() {
       return {
@@ -79,6 +82,27 @@ export default {
           'black_leather_suit-400x520.jpg',
           'spring_printed_dress-400x520.jpg',
           'modern_love_tee-400x520.jpg'
+        ],
+
+        ourBlogArray : [
+          {
+            'img' : 'post_img_12-320x202.jpg',
+            'titolo' : 'Aenean lobortis sapien enim viverra',
+            'data' : 'September 9th, 2015 | 0 comments',
+            'sottoTitolo' : 'Donec finibus sit amet orci ebget iltricies. Praesent posuere ante ut erat frigilla.'
+          },
+          {
+            'img' : 'post_img_11-320x202.jpg',
+            'titolo' : 'Duic ac massa semper maximus',
+            'data' : 'September 9th, 2015 | 0 comments',
+            'sottoTitolo' : 'Donec finibus sit amet orci ebget iltricies. Praesent posuere ante ut erat frigilla.'
+          },
+          {
+            'img' : 'post_img_10-320x202.jpg',
+            'titolo' : 'Nunc fermint nulla eu justo sem id',
+            'data' : 'September 9th, 2015 | 0 comments',
+            'sottoTitolo' : 'Donec finibus sit amet orci ebget iltricies. Praesent posuere ante ut erat frigilla.'
+          }
         ]
       }
     }    
