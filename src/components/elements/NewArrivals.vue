@@ -63,7 +63,7 @@ export default {
     display: flex;
     position: relative;
     width: 100%;
-    overflow-y:hidden ;
+    overflow-x: hidden;
 }
 .product-best{
     width: calc(100%/5);
