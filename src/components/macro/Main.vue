@@ -4,6 +4,8 @@
     <Collections/>
     <BestSeller :prods="bestSellerArray"/>
     <AdProd/>
+    <NewArrivals :arrivals="newArrivalsArray"/>
+    <Quote/>
   </main>
 </template>
 
@@ -11,14 +13,19 @@
 import FeaturedProducts from '../elements/FeaturedProducts.vue';
 import Collections from '../elements/Collections.vue';
 import BestSeller from '../elements/BestSeller.vue';
-import AdProd from '../elements/AdProd.vue'
+import AdProd from '../elements/AdProd.vue';
+import NewArrivals from '../elements/NewArrivals.vue';
+import Quote from '../elements/Quote.vue'
+
 export default {
     name: 'Main',
     components: {
       FeaturedProducts,
       Collections,
       BestSeller,
-      AdProd
+      AdProd,
+      NewArrivals,
+      Quote
        },
     data() {
       return {
@@ -64,6 +71,14 @@ export default {
           'black_leather_jacket-231x300.jpg',
           'black_elegant_leather_jacket-231x300.jpg',
           'hipster_black_top-231x300.jpg'
+        ],
+
+        newArrivalsArray : [
+          'black_elegant_leather_jacket-400x520.jpg',
+          'hipster_black_top-400x520.jpg',
+          'black_leather_suit-400x520.jpg',
+          'spring_printed_dress-400x520.jpg',
+          'modern_love_tee-400x520.jpg'
         ]
       }
     }    

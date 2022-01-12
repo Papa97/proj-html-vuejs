@@ -9,7 +9,7 @@
         </div>
             
         </div>
-        <div id="box-2" class="container-ad ms-4">
+        <div id="box-2" class="container-ad">
             <div class="spacer">
                 <div><h3>Free Shipping</h3></div>
                 <div class="text">Vivamus Tempor leo lacus, feugiat ut magna aliquam erat.</div>
@@ -60,7 +60,7 @@ margin-left: 45px ;
 }
 .container-ad{
     height: 70%;
-    width: 45%;
+    width: 48%;
     color: white;
     h3 {
         font-weight: 600;

@@ -1,16 +1,18 @@
 <template>
-    <div class="container text-center">
-        <div class="best-seller" > 
-            <h2>Best Seller</h2> 
+    <div>
+        <div class="container text-center">
+            <div class="new-arrivals" > 
+                <h2>New Arrivals</h2> 
+            </div>
+            <hr class="hr-1">
+            <hr class="hr-2">
+            <div class="light">Must have products from our top sellers</div>
         </div>
-        <hr class="hr-1">
-        <hr class="hr-2">
-        <div class="light">Must have products from our top sellers</div>
 
         <div class="container-prod">
             <div class="chev-left"><i class="fas fa-chevron-left"></i></div>
-            <div class="product-best" v-for="(prod, index) in prods" :key="index">
-                <img :src="require('../../assets/images/' + prod)" alt="">
+            <div class="product-best" v-for="(arrival, index) in arrivals" :key="index">
+                <img :src="require('../../assets/images/' + arrival)" alt="">
             </div>
             <div class="chev-right"> <i class="fas fa-chevron-right"></i></div>
         </div>
@@ -19,9 +21,9 @@
 
 <script>
 export default {
-    name:'BestSeller',
+    name: 'NewArrivals',
     props: {
-        prods : Array
+        arrivals : Array
     }
 }
 </script>
@@ -29,9 +31,10 @@ export default {
 <style lang='scss' scoped>
 .container{
     position: relative;
+    margin-top: 80px;
 }
 
-.best-seller{
+.new-arrivals{
     background-color: #fff;
     display: inline-block;
     h2{
@@ -54,17 +57,19 @@ export default {
 .light{
     color: #6b6a6b;
 }
+
 .container-prod{
+    margin: 50px 0;
     display: flex;
     position: relative;
+    width: 100%;
+    overflow-y:hidden ;
 }
-
 .product-best{
     width: calc(100%/5);
     cursor: pointer;
-    img {
-        height: 300px;
-    }
+    text-align: center;
+
 }
 
 .chev-left,
@@ -79,5 +84,4 @@ export default {
 .chev-right{
     right: 0;
 }
-
 </style>
