@@ -18,8 +18,8 @@
         <div class="row">
             <div class="col-3" v-for="(desc, index) in feat" :key="index">
                 <div><img :src="require('../../assets/images/' + desc.img)"></div>
-                <p>{{ desc.descrizione }}</p>
-                <p>{{ desc.keyWord}}</p>
+                <p class="feat-name">{{ desc.descrizione }}</p>
+                <p class="feat-desc">{{ desc.keyWord}}</p>
                 <p class="prezzi">
                     <span v-if="desc.prezzoListino" class="wrong" >${{desc.prezzoListino}} </span>
                     <span> ${{desc.prezzoSconto}}</span></p>
@@ -40,9 +40,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.feat-name,
+.feat-desc,
+.prezzi {
+    text-align: left;
+}
+
+.feat-name{
+    font-weight: 600;
+    margin-top: 30px;
+}
 .container{
     margin-top: 30px;
     position: relative;
+}
+
+.col-3{
+    margin-bottom: 80px;
 }
 
 .hr-1,
