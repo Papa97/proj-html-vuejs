@@ -17,14 +17,17 @@
         </div>
         <div class="row">
             <div class="col-3" v-for="(desc, index) in feat" :key="index">
-                <div><img :src="require('../../assets/images/' + desc.img)"></div>
+                <div class="maschera">
+                <span class="check"> <i class="far fa-check-square"></i> </span>
+                    <img :src="require('../../assets/images/' + desc.img)">
+                </div>
+
                 <p class="feat-name">{{ desc.descrizione }}</p>
                 <p class="feat-desc">{{ desc.keyWord}}</p>
                 <p class="prezzi">
-                    <span v-if="desc.prezzoListino" class="wrong" >${{desc.prezzoListino}} </span>
-                    <span> ${{desc.prezzoSconto}}</span></p>
+                <span v-if="desc.prezzoListino" class="wrong" >${{desc.prezzoListino}} </span>
+                <span> ${{desc.prezzoSconto}}</span></p>
             </div>
-
         </div>
       </div>
   </div>
@@ -40,6 +43,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.maschera {
+    img {
+        width: 100%;
+    }
+}
 
 .feat-name,
 .feat-desc,
@@ -108,4 +116,39 @@ export default {
     text-decoration: line-through;
     font-size: 14px;
 }
+
+.maschera{
+    position: relative;
+    
+}
+
+.check {
+        display: none;
+        color: #fff;
+        font-size: 28px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: #2f3034;
+        padding: 10px 20px;
+        border-radius: 50%;
+        z-index: auto;
+    }
+
+.maschera:hover {
+    background: rgb(66,126,213);
+    background: linear-gradient(180deg, rgba(66,126,213,0.9023984593837535) 0%, rgba(226,128,177,0.9023984593837535) 100%);
+    img {
+    opacity: .1;
+    background-size: cover;
+    text-align: center;
+    padding: 0;
+    }
+    .check {
+        display: block;
+    }
+}
+
+
 </style>
