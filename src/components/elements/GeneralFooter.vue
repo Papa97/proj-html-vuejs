@@ -124,6 +124,7 @@ export default {
 <style lang='scss' scoped>
 .col-3 {
     margin-top: 75px ;
+    margin-bottom: 80px;
 }
 .immagine-footer{
     width: 70%;

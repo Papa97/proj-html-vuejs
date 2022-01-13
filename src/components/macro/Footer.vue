@@ -2,17 +2,21 @@
     <footer>
         <Subscription/>
         <GeneralFooter :posts='postArray' :tags='tagsArray'/>
+        <BotttomFooter/>
     </footer>
 </template>
 
 <script>
 import Subscription from '../elements/Subscription.vue';
-import GeneralFooter from '../elements/GeneralFooter.vue'
+import GeneralFooter from '../elements/GeneralFooter.vue';
+import BotttomFooter from '../elements/BottomFooter.vue';
+
 export default {
     name:'Footer',
     components : {
         Subscription,
-        GeneralFooter
+        GeneralFooter,
+        BotttomFooter
     },
     data () {
         return {
