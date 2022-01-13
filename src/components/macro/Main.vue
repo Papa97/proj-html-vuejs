@@ -75,11 +75,36 @@ export default {
         ],
 
         bestSellerArray : [
-          'spring_printed_dress-231x300.jpg',
-          'modern_love_tee-200x260.jpg',
-          'black_leather_jacket-231x300.jpg',
-          'black_elegant_leather_jacket-231x300.jpg',
-          'hipster_black_top-231x300.jpg'
+          {
+            'img' : 'spring_printed_dress-231x300.jpg',
+            'title' : 'Spring Printed Dress',
+            'desc' : 'Woman, Dress',
+            'prize' : '$47'
+          },
+          {
+            'img' : 'modern_love_tee-200x260.jpg',
+            'title' : 'Spring Printed Dress',
+            'desc' : 'Woman, Dress',
+            'prize' : '$69'
+          },
+          {
+            'img' : 'black_leather_jacket-231x300.jpg',
+            'title' : 'Black Jacket',
+            'desc' : 'Woman, Jacket, Jeans',
+            'prize' : '$200'
+          },
+          {
+            'img' : 'black_elegant_leather_jacket-231x300.jpg',
+            'title' : 'Black Elengant Jacket',
+            'desc' : 'Men, Jacket, elegant',
+            'prize' : '$200'
+          },
+          {
+            'img' : 'hipster_black_top-231x300.jpg',
+            'title' : 'Hipster Black Top',
+            'desc' : 'Woman, Top',
+            'prize' : '$200'
+          }
         ],
 
         newArrivalsArray : [

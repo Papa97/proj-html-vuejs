@@ -10,7 +10,20 @@
         <div class="container-prod">
             <div class="chev-left"><i class="fas fa-chevron-left"></i></div>
             <div class="product-best" v-for="(prod, index) in prods" :key="index">
-                <img :src="require('../../assets/images/' + prod)" alt="">
+                <div class="maschera">
+                    <div class="overlay">
+                        <div class="overlay__center">
+                            <div>{{prod.title}}</div>
+                            <div>{{prod.desc}}</div>
+                            <div>{{prod.prize}}</div>
+                        </div>
+                        <div class="overlay__bottom">
+                            <div><i class="fas fa-shopping-cart"></i> Add to cart</div>
+                            <div><i class="fas fa-list-ul"></i> Details</div>
+                        </div>
+                    </div>
+                    <img :src="require('../../assets/images/' + prod.img)" alt="">
+                </div>
             </div>
             <div class="chev-right"> <i class="fas fa-chevron-right"></i></div>
         </div>
@@ -27,6 +40,30 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+
+.maschera {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    font-weight:600;
+    color: #fff;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1000;
+    display: none;
+    width: 100%;
+    &__bottom {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        bottom: 0;
+        padding: 0 10px ;
+    }
+}
+
 .container{
     position: relative;
 }
@@ -63,7 +100,19 @@ export default {
     width: calc(100%/5);
     cursor: pointer;
     img {
-        height: 300px;
+        // height: 300px;
+        width: 100%;
+    }
+}
+
+.product-best:hover {
+    background: rgb(66,126,213);
+    background: linear-gradient(180deg, rgba(66,126,213,0.9023984593837535) 0%, rgba(226,128,177,0.9023984593837535) 100%);
+    img {
+        opacity: .3;
+    }
+    .overlay {
+        display: block;
     }
 }
 
@@ -75,6 +124,7 @@ export default {
     color: white;
     background-color: #a0a5a5;
     padding: 15px 5px;
+    z-index: 20000;
 }
 .chev-right{
     right: 0;
