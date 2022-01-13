@@ -115,6 +115,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.row {
+    padding: 75px 0
+}
 // #featured {
 //     margin-right: 10px;
 // }
@@ -141,6 +144,7 @@ export default {
     padding-bottom: 15px;
     border-bottom: 1px solid;
     border-color: #a0a5a5;
+    height: 150px;
 }
 .title{
     text-transform: uppercase;

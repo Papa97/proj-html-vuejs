@@ -68,7 +68,7 @@
                                 <span class="sottolineato">$200</span> 
                             </div>
                         </div>
-                        <div class="colonna text-end"><img src="../../assets/images/leather_gloves-120x156.jpg" alt=""></div>
+                        <div class="colonna text-end"><img src="../../assets/images/black_elegant_leather_jacket-120x156.jpg" alt=""></div>
                   </div>
 
                   <div class="d-flex">
@@ -85,7 +85,7 @@
                             </div>
                             <div class="prezzo">$47</div>
                         </div>
-                        <div class="colonna text-end"><img src="../../assets/images/leather_gloves-120x156.jpg" alt=""></div>
+                        <div class="colonna text-end"><img src="../../assets/images/spring_printed_dress-120x156.jpg" alt=""></div>
                   </div>
                   
               </div>
