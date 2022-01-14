@@ -65,11 +65,12 @@ export default {
     margin: 0;
     padding-left: 0;
     li{
-        padding:0 5px
+        padding:0 25px
     }
     .last-li{
+        background-color: #f0f0f0;
         border-right: none;
-        padding: 0 40px;
+        padding: 0 80px;
         text-transform: uppercase;
         span {
             margin: 0 10px;
