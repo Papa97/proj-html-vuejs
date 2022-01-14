@@ -85,7 +85,7 @@ export default {
             'img' : 'modern_love_tee-200x260.jpg',
             'title' : 'Spring Printed Dress',
             'desc' : 'Woman, Dress',
-            'prize' : '$69'
+            'prize' : '$69`'
           },
           {
             'img' : 'black_leather_jacket-231x300.jpg',
